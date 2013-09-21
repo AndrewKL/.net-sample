@@ -1,10 +1,10 @@
-﻿## SearchBox.io Sample .NET Application.
+﻿## Searchly Sample .NET Application.
 
-This example illustrates basic search features of SearchBox.io ([ElasticSearch](http://www.elasticsearch.org) as service).
+This example illustrates basic search features of [Searchly[(http://www.searchly.com)] ([ElasticSearch](http://www.elasticsearch.org) as service).
 
 Each CRUD operation on documents is reflected to search index in real time.
 
-To test SearchBox.io's search features navigate to Manage Documents, create a new document and search it.
+To test Searchly's search features navigate to Manage Documents, create a new document and search it.
 
 You can click "Reindex All" at Manage Documents view to index all documents in database. It will delete old index if exists, create a new index and it will index all documents at database with Bulk API in one request.
 
@@ -28,6 +28,6 @@ This sample can be deployed to Appharbor with no change. With 2 steps applicatio
 
 * Install SQL Addon and go to the SQL Server add-on to specify `SampleEntities` as the alias.
 
-* Install SearchBox ElasticSearch Addon.
+* Install Searchly ElasticSearch Addon.
 
 Deploy sample application, create some records and experience real time search.
