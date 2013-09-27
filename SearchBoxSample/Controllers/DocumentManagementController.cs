@@ -112,6 +112,13 @@ namespace SearchBoxSample.Controllers
 
             var client = new ElasticClient(settings);
 
+            // delete index if exists at startup
+            if (!client.IndexExists("sample").Exists)
+            {
+                // Create a new "sample" index with default settings
+                client.CreateIndex("sample", new IndexSettings());
+            }
+
             if (operation.Equals("delete"))
             {
                 client.DeleteById("sample", "documents", document.DocumentId);
