@@ -95,7 +95,7 @@ namespace SearchBoxSample.Controllers
             client.CreateIndex("sample", new IndexSettings());
 
             // Index all documents
-            client.Index<Document>(documents);
+            client.IndexMany<Document>(documents);
 
             ViewBag.Message = "Reindexing all database is complete!";
 
@@ -114,7 +114,7 @@ namespace SearchBoxSample.Controllers
 
             if (operation.Equals("delete"))
             {
-                ConnectionStatus status = client.DeleteById("sample", "documents", document.DocumentId);
+                client.DeleteById("sample", "documents", document.DocumentId);
             }
             else
             {
