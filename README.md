@@ -1,6 +1,6 @@
 ﻿## Searchly Sample .NET Application.
 
-This example illustrates basic search features of [Searchly[(http://www.searchly.com)] ([ElasticSearch](http://www.elasticsearch.org) as service).
+This example illustrates basic search features of [Searchly](http://www.searchly.com) ([ElasticSearch](http://www.elasticsearch.org) as service).
 
 Each CRUD operation on documents is reflected to search index in real time.
 
