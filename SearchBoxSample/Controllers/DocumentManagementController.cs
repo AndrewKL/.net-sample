@@ -112,7 +112,6 @@ namespace SearchBoxSample.Controllers
 
             var client = new ElasticClient(settings);
 
-            // delete index if exists at startup
             if (!client.IndexExists("sample").Exists)
             {
                 // Create a new "sample" index with default settings
